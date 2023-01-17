@@ -2,16 +2,21 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { configureStore } from "@reduxjs/toolkit";
-import { Provider } from "react-redux";
 
+import { configureStore } from "@reduxjs/toolkit";//to configure the store using toolkit
+import { Provider } from "react-redux";//to make the store accessible to all components 
+
+//importing reducers
 import themeReducer from "./features/theme"
 import  userReducer from "./features/user"
+import counterReducer from "./features/counter"
 
+//configuring the store
 const store = configureStore({
   reducer: {
     user:userReducer,
-    theme:themeReducer
+    theme:themeReducer,
+    counter:counterReducer
   },
 });
 
