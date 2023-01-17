@@ -5,11 +5,13 @@ import reportWebVitals from "./reportWebVitals";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 
+import themeReducer from "./features/theme"
 import  userReducer from "./features/user"
 
 const store = configureStore({
   reducer: {
     user:userReducer,
+    theme:themeReducer
   },
 });
 
