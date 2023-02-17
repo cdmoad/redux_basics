@@ -7,6 +7,7 @@ function Profile() {
   const user=useSelector((state)=>state.user.value)
   const themeColor=useSelector((state)=>state.theme.value)
   const counter=useSelector((state)=>state.counter.value)
+  const gender=useSelector((state)=>state.gender.value)
 
   return (
     <div style={{color:themeColor}}>
@@ -15,6 +16,7 @@ function Profile() {
       <p>Name:{user.name}</p>
       <p>Age:{user.age}</p>
       <p>Email:{user.email}</p>
+      <p>Gender:{gender}</p>
     </div>
   );
 

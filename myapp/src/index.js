@@ -10,13 +10,15 @@ import { Provider } from "react-redux";//to make the store accessible to all com
 import themeReducer from "./features/theme"
 import  userReducer from "./features/user"
 import counterReducer from "./features/counter"
+import genderReducer from "./features/gender"
 
 //configuring the store
 const store = configureStore({
   reducer: {
     user:userReducer,
     theme:themeReducer,
-    counter:counterReducer
+    counter:counterReducer,
+    gender:genderReducer
   },
 });
 
