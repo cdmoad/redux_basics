@@ -18,6 +18,7 @@ function App() {
      <br/>
      <Counter/>
      <br/>
+     <Gender/>
 
     </div>
   );
