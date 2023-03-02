@@ -17,6 +17,7 @@ const store = configureStore({
   reducer: {
     user:userReducer,
     theme:themeReducer,
+    
     counter:counterReducer,
     gender:genderReducer
   },
